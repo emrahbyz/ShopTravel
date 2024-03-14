@@ -43,7 +43,7 @@ const SliderComp = () => {
               Öne Çıkan Ürünler
             </div>
             <div>
-              <h3 className="flex items-center justify-center  ">
+              <h3 className="flex items-center justify-center ">
                 <img
                   className="w-[240px]"
                   src="https://productimages.hepsiburada.net/s/127/1500/110000077439194.jpg"

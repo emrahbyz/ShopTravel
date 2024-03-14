@@ -1,7 +1,7 @@
 import React from "react";
 
-const Sepet = () => {
+const Basket = () => {
   return <div>Sepet</div>;
 };
 
-export default Sepet;
+export default Basket;
