@@ -9,13 +9,15 @@ export const basketSlices = createSlice({
   reducers: {
     addSepet: (state, action) => {
       const product = action.payload;
+
+      console.log(product);
       const productItems = state.items.find((item) => {
         return item.id === product.id;
       });
       if (productItems) {
-        productItems.quantity += 1;
+        productItems.quantity += product.quantity;
       } else {
-        state.items.push({ ...product, quantity: 1 });
+        state.items.push({ ...product, quantity: product.quantity });
       }
       localStorage.setItem("cart", JSON.stringify(state));
     },
